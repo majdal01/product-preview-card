@@ -1,0 +1,11 @@
+/* Colors */
+/* Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.875rem; /* 14px */
+}/*# sourceMappingURL=style.css.map */
