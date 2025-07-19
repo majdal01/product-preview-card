@@ -82,6 +82,10 @@ body {
         .button-text {
             @include text-preset-2;
         }
+
+        &:hover {
+            background: $primary-color-700;
+        }
     }
 
 }
