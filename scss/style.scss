@@ -19,32 +19,61 @@ body {
 .product-preview-card {
     display: flex;
     flex-direction: row;
-}
 
-.product-image {
+    .product-image {
     max-width: 18.75rem; /* 300px */
     border-radius: $spacing-100 0 0 $spacing-100;
-}
+    }
 
-.product-details {
+    .product-details {
     padding: $spacing-400;
     background: $neutral-white;
     max-width: 18.75rem; /* 300px */
     border-radius: 0 $spacing-100 $spacing-100 0;
+
+        .product-type {
+        @include text-preset-4;
+        color: $neutral-grey;
+        }
+
+        h1 {
+            @include text-preset-1;
+            margin: $spacing-300 0 $spacing-300;
+            color: $neutral-black;
+        }
+
+        .product-description {
+            @include text-preset-3;
+            color: $neutral-grey;
+        }
+
+    }
+
+    .product-price-container {
+    display: flex;
+    margin: $spacing-400 0 $spacing-400;
+
+    .product-price {
+        @include text-preset-1;
+        color: $primary-color-500;
+    }
+
+    .product-price-old {
+        @include text-preset-5;
+        color: $neutral-grey;
+        margin-left: $spacing-200;
+        text-decoration: line-through;
+        align-self: center;
+    }
+    }
+
 }
 
-.product-type {
-    @include text-preset-4;
-    color: $neutral-grey;
-}
 
-h1 {
-    @include text-preset-1;
-    margin: $spacing-300 0 $spacing-300;
-    color: $neutral-black;
-}
 
-.product-description {
-    @include text-preset-3;
-    color: $neutral-grey;
-}
+
+
+
+
+
+
