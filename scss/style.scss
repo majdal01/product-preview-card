@@ -67,6 +67,23 @@ body {
     }
     }
 
+    .add-to-cart-button {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background: $primary-color-500;
+        color: $neutral-white;
+        padding: $spacing-200 $spacing-500;
+        border: none;
+        border-radius: $spacing-100;
+        gap: $spacing-100;
+
+        .button-text {
+            @include text-preset-2;
+        }
+    }
+
 }
 
 

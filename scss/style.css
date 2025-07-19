@@ -78,4 +78,23 @@ body {
   margin-left: 1rem;
   text-decoration: line-through;
   align-self: center;
+}
+.product-preview-card .add-to-cart-button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  gap: 0.5rem;
+}
+.product-preview-card .add-to-cart-button .button-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem; /* 14px */
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0;
 }/*# sourceMappingURL=style.css.map */
