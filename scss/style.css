@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Spacing */
 /* Colors */
 /* Typography */
@@ -22,7 +23,13 @@ body {
 }
 .product-preview-card .product-image {
   max-width: 18.75rem; /* 300px */
+  height: auto;
   border-radius: 0.5rem 0 0 0.5rem;
+}
+.product-preview-card .product-image-mobile {
+  display: none; /* Hide mobile image by default */
+  max-width: 21.875rem; /* 350px */
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 .product-preview-card .product-details {
   padding: 2rem;
@@ -100,4 +107,27 @@ body {
 }
 .product-preview-card .add-to-cart-button:hover {
   background: hsl(158, 42%, 18%);
+}
+
+@media (max-width: 375px) {
+  .product-preview-card {
+    flex-direction: column;
+    margin: 0.5rem;
+    max-width: calc(100vw - 1rem); /* Sikrer at kortet ikke går ud over skærmen */
+  }
+  .product-preview-card .product-image {
+    display: none;
+  }
+  .product-preview-card .product-image-mobile {
+    display: block;
+    max-width: 21.875rem; /* 350px */
+    height: auto;
+  }
+  .product-preview-card .product-details {
+    max-width: 21.875rem; /* 350px */
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+  .product-preview-card .product-price-container {
+    margin: 1.5rem 0 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

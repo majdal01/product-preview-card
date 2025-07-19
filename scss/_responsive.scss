@@ -1,0 +1,28 @@
+
+@media (max-width: 375px) {
+
+    .product-preview-card {
+        flex-direction: column;
+        margin: $spacing-100;
+        max-width: calc(100vw - #{$spacing-100 * 2}); /* Sikrer at kortet ikke går ud over skærmen */
+        
+        .product-image {
+            display: none; 
+        }
+
+        .product-image-mobile {
+            display: block; 
+            max-width: 21.875rem; /* 350px */;
+            height: auto;
+        }
+
+        .product-details {
+            max-width: 21.875rem; /* 350px */;
+            border-radius: 0 0 $spacing-100 $spacing-100; 
+        }  
+        
+        .product-price-container {
+            margin: $spacing-300 0 $spacing-300;
+        }
+    }
+}
